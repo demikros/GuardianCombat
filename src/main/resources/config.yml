@@ -1,0 +1,57 @@
+combat-duration-seconds: 15
+
+bossbar:
+  enabled: true
+  color: RED
+  overlay: PROGRESS
+  title: "<red><bold>COMBAT</bold></red> <gray>|</gray> <yellow>{seconds}s</yellow>"
+
+blocked-commands:
+  - /tp
+  - /teleport
+  - /home
+  - /spawn
+  - /warp
+  - /back
+  - /tpa
+  - /tpahere
+  - /rtp
+  - /wild
+  - /suicide
+  - /fly
+  - /gm
+  - /gamemode
+  - /god
+  - /invsee
+  - /ec
+  - /enderchest
+  - /pv
+  - /vault
+  - /kit
+  - /shop
+  - /ah
+  - /auctionhouse
+  - /logout
+  - /leave
+
+block-elytra: true
+block-enderpearl: false
+block-chorus: true
+punish-on-kick: true
+
+messages:
+  combat-tagged: "<red>You are now <bold>in combat</bold> with <yellow>{opponent}</yellow><red>!"
+  combat-expired: "<green>You are no longer in combat."
+  combat-log-broadcast: "<dark_red><bold>[GuardianCombat]</bold> <yellow>{player}</yellow> <red>combat-logged and was slain!"
+  command-blocked: "<red>You cannot use <yellow>/{command}</yellow> <red>while in combat!"
+  elytra-blocked: "<red>You cannot use elytra while in combat!"
+  enderpearl-blocked: "<red>You cannot use ender pearls while in combat!"
+  chorus-blocked: "<red>You cannot use chorus fruit while in combat!"
+  status-self-tagged: "<yellow>You are in combat with <red>{opponent}</red><yellow>. Time remaining: <red>{seconds}s</red><yellow>."
+  status-self-clear: "<green>You are not currently in combat."
+  status-other-tagged: "<yellow>{player} <gray>is in combat with <red>{opponent}</red><gray>. Time remaining: <red>{seconds}s</red><gray>."
+  status-other-clear: "<yellow>{player} <green>is not currently in combat."
+  status-player-not-found: "<red>Player <yellow>{player}</yellow> <red>not found."
+  no-permission: "<red>You do not have permission to do that."
+  config-reloaded: "<green>GuardianCombat configuration reloaded."
+  usage-combat: "<red>Usage: <yellow>/combat <status [player]|reload>"

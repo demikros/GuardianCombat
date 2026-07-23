@@ -1,0 +1,26 @@
+name: GuardianCombat
+version: 1.0.0
+api-version: '1.21'
+main: dev.craftforge.guardiancombat.GuardianCombat
+author: CraftForge
+description: PvP combat-tagging system with anti combat-log enforcement.
+
+commands:
+  combat:
+    description: GuardianCombat management command.
+    usage: /combat <status|reload> [player]
+    permission: guardiancombat.use
+
+permissions:
+  guardiancombat.use:
+    description: Allows use of the /combat command.
+    default: true
+  guardiancombat.status.others:
+    description: Allows checking combat status of other players.
+    default: op
+  guardiancombat.admin:
+    description: Allows use of /combat reload and administrative features.
+    default: op
+  guardiancombat.bypass:
+    description: Bypasses combat restrictions (blocked commands, elytra, etc).
+    default: false
